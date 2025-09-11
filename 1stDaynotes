@@ -1,0 +1,28 @@
+Old law:
+
+	+ Asir1
+	    |-TemarioBase
+
+	+ Asir2
+	    |-Temario base
+	    |-FCT (Practicas)
+	    |-ProyectoFinalGrado
+
+New Law
+
+	+ Asir1
+	    |-Temario por modulos
+	    |-100h Practicas
+	    |-Proyecto 1h/semana
+
+	+ Asir2
+	    |-Temario por modulos
+	    |-400h Practicas
+	    |-Proyecto 3h/semana
+
+
+Rules:
+
+- No usb o discos duros en los pc del aula
+- Traer libreta y boli
+- No 
