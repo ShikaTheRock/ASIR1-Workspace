@@ -1,0 +1,41 @@
+<alumnos>
+  <alumno id="alu1">
+    <nombre>Laura</nombre>
+    <apellidos>Martínez Gómez</apellidos>
+    <localidad>Valencia</localidad>
+    <direccion>C/ Mayor, 24, 2ºA</direccion>
+    <telefono>612 345 678</telefono>
+  </alumno>
+
+  <alumno id="alu2">
+    <nombre>Daniel</nombre>
+    <apellidos>López Fernández</apellidos>
+    <localidad>Sevilla</localidad>
+    <direccion>Av. Andalucía, 135, 1ºB</direccion>
+    <telefono>634 987 321</telefono>
+  </alumno>
+
+  <alumno id="alu3">
+    <nombre>Marta</nombre>
+    <apellidos>Sánchez Ruiz</apellidos>
+    <localidad>Madrid</localidad>
+    <direccion>C/ Alcalá, 89, 4ºC</direccion>
+    <telefono>699 112 233</telefono>
+  </alumno>
+
+  <alumno id="alu4">
+    <nombre>Javier</nombre>
+    <apellidos>Torres Morales</apellidos>
+    <localidad>Zaragoza</localidad>
+    <direccion>Pza. Pilar, 17, 3ºD</direccion>
+    <telefono>645 776 889</telefono>
+  </alumno>
+
+  <alumno id="alu5">
+    <nombre>Cristina</nombre>
+    <apellidos>Romero Delgado</apellidos>
+    <localidad>Bilbao</localidad>
+    <direccion>C/ Gran Vía, 202, 5ºE</direccion>
+    <telefono>678 554 210</telefono>
+  </alumno>
+</alumnos>

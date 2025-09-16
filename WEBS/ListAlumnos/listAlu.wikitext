@@ -1,0 +1,66 @@
+=Alumnos=
+
+==Alumno 1==
+
+===Nombre===
+Laura
+===Apellidos===
+Martínez Gómez
+===Localidad===
+Valencia
+===Direccion===
+C/ Mayor, 24, 2ºA
+===Telefono===
+612 345 678
+
+==Alumno 2==
+
+===Nombre===
+Daniel
+===Apellidos===
+López Fernández
+===Localidad===
+Sevilla
+===Direccion===
+Av. Andalucía, 135, 1ºB
+===Telefono===
+634 987 321
+
+==Alumno 3==
+
+===Nombre===
+Marta
+===Apellidos===
+Sánchez Ruiz
+===Localidad===
+Madrid
+===Direccion===
+C/ Alcalá, 89, 4ºC
+===Telefono===
+699 112 233
+
+==Alumno 4==
+
+===Nombre===
+Javier
+===Apellidos===
+Torres Morales
+===Localidad===
+Zaragoza
+===Direccion===
+Pza. Pilar, 17, 3ºD
+===Telefono===
+645 776 889
+
+==Alumno 5==
+
+===Nombre===
+Cristina
+===Apellidos===
+Romero Delgado
+===Localidad===
+Bilbao
+===Direccion===
+C/ Gran Vía, 202, 5ºE
+===Telefono===
+678 554 210
