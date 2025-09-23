@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mamiferos>
+  <CaracterísticasGenerales>
+    <sangre>Sangre caliente (endotermos)</sangre>
+    <pelopelaje>Pelo o pelaje</pelopelaje>
+    <glandulas>Glándulas mamarias (alimentan a las crías con leche)</glandulas>
+    <resp>Respiración pulmonar</resp>
+    <viviparo>Mayoría vivíparos</viviparo>
+  </CaracterísticasGenerales>
+
+  <ClasificacionPrincipal>
+    <Monotermas>
+      <huevo> Ponen huevos</huevo>
+      <pico>Pico y cloaca</pico>
+      <ej>Ejemplos: Ornitorrinco, Equidna</ej>
+    </Monotermas>
+    <Marsupiales>
+      <crias>Crías nacen poco desarrolladas</crias>
+      <desarrollo>Completar desarrollo en bolsa marsupial</desarrollo>
+      <ej2>Ejemplos: Canguro, Koala, Zarigüeya</ej2>
+    </Marsupiales>
+    <Placentarios>
+      <desarrollo2>Desarrollo fetal dentro del útero</desarrollo2>
+      <conexion>Conexión madre-cría por placenta</conexion>
+      <ej3>
+        <carnivoro>Carnívoros (perros, gatos, leones)</carnivoro>
+        <primate>Primates (monos, humanos)</primate>
+        <roedor>Roedores (ratones, ardillas, castores)</roedor>
+      </ej3>
+    </Placentarios>
+  </ClasificacionPrincipal>
+</mamiferos>
+
