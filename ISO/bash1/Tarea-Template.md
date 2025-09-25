@@ -135,3 +135,62 @@ cp registro.txt respaldos
 ```bash
 rm registro.txt
 ```
+
+# Tarea 02: Volviendo sobre nuestros pasos
+
+```bash
+history | tail -n 31 >> EstaEsMiHistoria.log
+```
+
+# Tarea 03: Lectura comprensiva
+
+```bash
+#!/bin/bash
+cd /etc/apt
+ls
+mkdir /tmp/Hyrule /tmp/Kakariko /tmp/GoronCity /tmp/ZorasDomain
+    /tmp/LostWoods /tmp/TempleOfTime /tmp/GerudoValley /tmp/DeathMountain
+    /tmp/TwilightRealm /tmp/config-err-YbCPSF/tmp/TwilightRealm /tmp/config-err-YbCPSF/tmp/TwilightRealm /tmp/Skyloft
+cd
+pwd
+mkdir /tmp/Hyrule/items /tmp/Kakariko/items /tmp/GoronCity/items
+    /tmp/ZorasDomain/items /tmp/LostWoods/items /tmp/TempleOfTime/items
+    /tmp/GerudoValley/items /tmp/DeathMountain/items
+    /tmp/TwilightRealm/items /tmp/Skyloft/items
+
+
+
+echo "Espada Maestra, Escudo Hyliano, Botella" > /tmp/inventory.txt
+cd /tmp
+
+Implantación de Sistemas Operativos Curso 2024-2025
+cp inventory.txt /tmp/Hyrule/items
+cp inventory.txt /tmp/Kakariko/items
+cp inventory.txt /tmp/GoronCity/items
+cp inventory.txt /tmp/ZorasDomain/items
+cp inventory.txt /tmp/LostWoods/items
+cp inventory.txt /tmp/TempleOfTime/items
+cp inventory.txt /tmp/GerudoValley/items
+cp inventory.txt /tmp/DeathMountain/items
+cp inventory.txt /tmp/TwilightRealm/items
+cp inventory.txt /tmp/Skyloft/items
+exit 0
+```
+
+1. Se mete en /etc/apt
+
+2. Mira los ficheros que hay ahi 
+
+3. Crea muchas carpetas
+
+4. Se va al home y mira donde esta 
+
+5. Crea carpetas dentro de las carpetas de antes 
+
+6. Pasa palabras a un fichero en tmp 
+
+7. Se va a tmp
+
+9. Copia iventori.txt a las subcarpetas que creo antes
+
+10. sale del script
