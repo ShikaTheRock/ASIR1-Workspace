@@ -92,46 +92,46 @@ echo "pepino" >> registro.txt
 ```
 ## 20. Muestra las primeras 5 líneas de “registro.txt”.
 ```bash
-
+head -n 5 registro.txt
 ```
 ## 21. Agrega otra línea de texto al final de “registro.txt”.
 ```bash
-
+echo patata >> registro.txt
 ```
 ## 22. Muestra las últimas 5 líneas de “registro.txt”.
 ```bash
-
+tail -n 5 registro.txt
 ```
 ## 23. Busca todas las instancias de una palabra específica en “registro.txt”.
 ```bash
-
+cat registro.txt | grep patata 
 ```
 ## 24. Muestra el número total de líneas en “registro.txt”.
 ```bash
-
+cat registro.txt | wc -l
 ```
 ## 25. Muestra el número total de palabras en “registro.txt”
 ```bash
-
+cat registro.txt | wc
 ```
 ## 26. Cambia los permisos de “registro.txt” para que solo el propietario pueda escribir en él.
 ```bash
-
+chmod 007 registro.txt
 ```
 ## 27. Cambia el propietario de “registro.txt” a otro usuario en tu sistema.
 ```bash
-
+chown hector:hector registro.txt
 ```
 ## 28. Crea un directorio llamado “respaldos” en el directorio principal de tu usuario.
 ```bash
-
+mkdir respldos
 ```
 
 ## 29. Copia “registro.txt” al directorio “respaldos”.
 ```bash
-
+cp registro.txt respaldos
 ```
 ## 30. Elimina “registro.txt” del directorio principal de tu usuario.
 ```bash
-
+rm registro.txt
 ```
