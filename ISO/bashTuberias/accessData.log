@@ -1,0 +1,16 @@
+Fecha, Dirección IP, Hora de Entrada, Hora de Salida, Nombre del Empleado, Número de Empleado, Departamento, Motivo de la Visita, Email del Empleado, Teléfono del Empleado
+2023-10-02, 192.168.1.1, 09:00 AM, 06:00 PM, Ana Rodríguez, 12345, Ventas, Reunión de Ventas Importante, ana.rodriguez@example.com, 555-123-4567
+2023-10-05, 192.168.1.2, 08:30 AM, 05:30 PM, Carlos López, 56789, Recursos Humanos, Trabajo Regular, , 555-234-5678
+2023-10-10, 192.168.1.3, 10:15 AM, 03:45 PM, María Sánchez, 23456, Marketing, Entrega de Informes importAnte, maria.sanchez@example.com, 555-345-6789
+2023-10-15, 192.168.1.4, 07:45 AM, 04:30 PM, Juan Pérez, 78901, Producción, Supervisión de Línea, , 555-456-7890
+2023-10-20, 192.168.1.5, 09:30 AM, 06:00 PM, Laura Martínez, 34567, Finanzas, Auditoría, , 555-567-8901
+2023-10-25, 192.168.1.6, 08:00 AM, 05:30 PM, José González, 90123, Tecnología de la Información, Mantenimiento de Redes importante, jose.gonzalez@example.com, 555-678-9012
+2023-10-29, 192.168.1.7, 07:30 AM, 04:00 PM, Elena García, 45678, Logística, Recepción de Envíos, , 555-789-0123
+2023-11-03, 192.168.1.8, 10:00 AM, 03:30 PM, Miguel Torres, 12345, Ventas, Capacitación en Ventas, miguel.torres@example.com, 
+2023-11-08, 192.168.1.9, 09:15 AM, 05:45 PM, Patricia Fernández, 56789, Recursos Humanos, Entrevistas de Trabajo importante, , 555-901-2345
+2023-11-12, 192.168.1.10, 08:45 AM, 04:15 PM, David Rodríguez, 23456, Marketing, Revisión de Campañas, , 555-012-3456
+2023-11-16, 192.168.1.11, 07:30 AM, 04:00 PM, Carmen López, 78901, Producción, Control de Calidad importantE, carmen.lopez@example.com, 
+2023-11-19, 192.168.1.12, 10:30 AM, 03:30 PM, Roberto Sánchez, 34567, Finanzas, Análisis de Gastos importante, , 555-234-5678
+2023-11-22, 192.168.1.13, 09:00 AM, 05:30 PM, Teresa Pérez, 90123, Tecnología de la Información, Soporte Técnico, teresa.perez@example.com, 
+2023-11-26, 192.168.1.14, 08:30 AM, 04:00 PM, Pablo González, 45678, Logística, Distribución de Productos importante, , 555-456-7890
+2023-11-30, 192.168.1.15, 10:15 AM, 03:45 PM, Laura Martínez, 12345, Ventas, Revisión de Clientes importante, laura.martinez@example.com, 555-567-8901

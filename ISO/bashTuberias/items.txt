@@ -1,0 +1,19 @@
+Super Champiñón (Super Mushroom) - Power-Up: Hace que Mario crezca y obtenga una vida adicional.
+Flor de Fuego (Fire Flower) - Power-Up: Permite a Mario lanzar bolas de fuego para atacar a los enemigos.
+Estrella (Super Star) - Power-Up: Convierte a Mario en invulnerable durante un corto período de tiempo.
+Hoja Tanuki (Super Leaf) - Power-Up: Le da a Mario la capacidad de volar y atacar con su cola.
+Flor Boomerang (Boomerang Flower) - Power-Up: Permite a Mario lanzar boomerangs para atacar y recoger objetos.
+Caparazón Verde (Green Shell) - Item: Un caparazón que puede ser lanzado para atacar a los enemigos.
+Caparazón Rojo (Red Shell) - Item: Un caparazón que sigue al objetivo y ataca a los enemigos.
+Estrella de Poder (Super Star) - Item: Otorga a Mario temporalmente invencibilidad.
+Hongo Venenoso (Poison Mushroom) - Item: Hace que Mario se encoja y pierda una vida.
+Bloque "?" (Question Block) - Item: Puede contener varios objetos, incluyendo power-ups, monedas y otros items.
+Monedas (Coins) - Item: Se recogen para ganar vidas extra y puntos.
+Flor de Hielo (Ice Flower) - Power-Up: Permite a Mario disparar bolas de hielo que congelan a los enemigos.
+Campana Super Bell (Super Bell) - Power-Up: Transforma a Mario en Gato Mario, que puede trepar paredes y atacar con garras.
+Martillo (Hammer) - Item: Se utiliza para romper bloques y derrotar enemigos en algunos juegos.
+Bloque de Ladrillos (Brick Block) - Item: Pueden contener items o ser destruidos para revelar secretos.
+Bloque P-Switch (P-Switch) - Item: Activa o desactiva bloques especiales en algunos juegos.
+Flor de Metal (Metal Cap) - Power-Up: Transforma a Mario en Metal Mario, haciéndolo invulnerable y permitiéndole caminar bajo el agua.
+Campana Boomerang (Boomerang Bell) - Power-Up: Similar a la Flor Boomerang, convierte a Mario en Boomerang Mario.
+Caparazón Azul (Blue Shell) - Item: En algunos juegos, se utiliza para atacar y destruir a los enemigos en el camino.

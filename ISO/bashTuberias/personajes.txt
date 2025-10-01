@@ -1,0 +1,20 @@
+Mario: El personaje principal y fontanero del juego. Su misión es rescatar a la Princesa Peach de las garras de Bowser.
+Luigi: El hermano de Mario, también fontanero, y un personaje jugable en muchos juegos de Mario.
+Princesa Peach: La Princesa del Reino Champiñón y el objetivo principal de rescate en muchos juegos de Mario.
+Bowser: El principal antagonista y enemigo jurado de Mario, líder de los Koopas y el villano detrás de los secuestros de la Princesa Peach.
+Yoshi: Una criatura dinosaurio que es amigo de Mario y que a menudo lo ayuda en sus aventuras.
+Toad: Los habitantes del Reino Champiñón, reconocidos por sus cabezas de hongos.
+Bowser Jr.: El hijo de Bowser, a veces actúa como un enemigo secundario.
+Donkey Kong: Aunque inicialmente era un villano, Donkey Kong se convirtió en un aliado y protagonista de sus propios juegos.
+Wario: El rival y enemigo de Mario, conocido por su personalidad avariciosa.
+Waluigi: El compañero de Wario y enemigo en juegos deportivos de Mario.
+Daisy: Otra princesa amiga de Peach, a menudo aparece en juegos deportivos de Mario.
+Rosalina: La guardiana del Observatorio Cometario y personaje importante en Super Mario Galaxy.
+Toadette: Una versión femenina de Toad que aparece en varios juegos de Mario.
+Birdo: Una criatura similar a un dinosaurio que a veces es un personaje jugable.
+Koopa Troopa: Los soldados de Bowser, y enemigos de Mario, que aparecen en varios roles en los juegos.
+Boo: Fantasmas traviesos que aparecen en muchas aventuras como enemigos de Mario.
+Goomba: Criaturas enemigas con forma de hongos que son comunes en los juegos.
+Kamek: Un mago Koopa que a menudo actúa como enemigo en juegos de Mario.
+Cappy: El sombrero mágico que acompaña a Mario en Super Mario Odyssey.
+Pauline: La antigua interés amoroso de Mario y alcaldesa de Nueva Donk City.
