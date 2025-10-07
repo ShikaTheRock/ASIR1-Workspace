@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table columns="7">
+  <row0>
+    <cell1><text>Nombre</text></cell1>
+    <cell2><text>Variedad</text></cell2>
+    <cell3><text>Ciudad Origen</text></cell3>
+    <cell4><text>Color del Fruto</text></cell4>
+    <cell5><text>Maduracion</text></cell5>
+    <cell6><text>Riego</text></cell6>
+    <cell7><text>Precio kg</text></cell7>
+  </row0>
+  <row1>
+    <cell1><text>Litchi</text></cell1>
+    <cell2><text>Kway may pink</text></cell2>
+    <cell3><text>Filipinias</text></cell3>
+    <cell4><text>Rosa</text></cell4>
+    <cell5><text>Agosto</text></cell5>
+    <cell6><text>Diario</text></cell6>
+    <cell7><text>3.50€</text></cell7>
+  </row1>
+  <row2>
+    <cell1><text>Logan</text></cell1>
+    <cell2><text>Champoo</text></cell2>
+    <cell3><text>China</text></cell3>
+    <cell4><text>Marron</text></cell4>
+    <cell5><text>Octubre</text></cell5>
+    <cell6><text>Diario</text></cell6>
+    <cell7><text>2,5€</text></cell7>
+  </row2>
+  <row3>
+    <cell1><text>Litchi</text></cell1>
+    <cell2><text>Mauritius</text></cell2>
+    <cell3><text>Florida</text></cell3>
+    <cell4><text>Rojo</text></cell4>
+    <cell5><text>Agosto</text></cell5>
+    <cell6><text>Diario</text></cell6>
+    <cell7><text>3€</text></cell7>
+  </row3>  
+</table>

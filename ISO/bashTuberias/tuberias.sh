@@ -64,6 +64,17 @@ cat personajes.txt | grep princesa
 
 cat items.txt | grep -o fuego | wc
 
+# Escribe un comando para agregar el texto “Nuevo nivel: Mundo 8-4” al final de un archivo llamado “niveles.txt”
+
+echo "Nuevo nivel: Mundo 8-4" >> niveles.txt
+
+#Utiliza un comando para encontrar y mostrar las líneas que contienen la palabra “Boo” en un archivo llamado “enemigos_mario.txt”.
+
+cat enemigos_mario.txt | grep Boo
+
+#Cuenta cuántas veces aparece la palabra “Boomerang” en un archivo llamado “items.txt”.
+
+cat items.txt | grep -o "Boomerang" | wc
 
 
 
