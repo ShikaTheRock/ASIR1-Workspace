@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<coche>
+  <marca>
+    ford
+  </marca>
+  <modelo>
+    fiesta
+  </modelo>
+  <motor>
+    v16
+  </motor>
+  <matricula>
+    0000abc
+  </matricula>
+  <kilometros>
+    14000000000
+  </kilometros>
+  <precioorg>
+    20€
+  </precioorg>
+  <precioof>
+    50€
+  </precioof>
+  <extras>
+    todos
+  </extras>
+  <fotos>
+    fotos
+  <fotos>
+</coche>
+

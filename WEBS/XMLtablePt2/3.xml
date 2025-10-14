@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mensaje>
+  <remitente>
+    <nombre>
+      test1
+    </nombre>
+    <email>
+      test1@gmail.com
+    </email>
+  </remitente>
+  <destinatario>
+    <nombre>
+      test2
+    </nombre>
+    <email>
+      test2@gmail.com
+    </email>
+  </destinatario>
+  <asunto>
+    Testtest
+  </asunto>
+  <texto>
+    ¿Hola qué tal?
+  </texto>
+  <texto>
+    Hace mucho tiempo que no escribes. A ver si llamas y quedamos pronto.
+  </texto>
+  <texto>
+    Un saludo.
+  </texto>
+</mensaje>

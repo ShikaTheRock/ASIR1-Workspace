@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<discografia>
+  <disco>
+    <nombre>
+      A hard day's night
+    </nombre>
+    <grupo>
+      The Beatles
+    </grupo>
+    <canciones>
+      <cancion>A Hard Day's Night</cancion>
+      <cancion>I Should Have Known Better</cancion>
+      <cancion>I'm Happy Just to Dance with You</cancion>
+      <cancion>A Hard Day's Night</cancion>
+    </canciones>
+  </disco>
+  <disco>
+    <nombre>
+      Abbey Road
+    </nombre>
+    <grupo>
+       The Beatles
+    </grupo>
+    <canciones>
+      <cancion>Come Together</cancion>
+      <cancion>Something</cancion>
+      <cancion>You Can't Catch Me</cancion>
+      <cancion>I Want You (She's So Heavy)</cancion>
+    </canciones>
+  </disco>
+  <disco>
+    <nombre>
+      Flowers
+    </nombre>
+    <grupo>
+      the Rolling Stones
+    </grupo>
+    <canciones>
+      <cancion>Ruby Tuesday</cancion>
+      <cancion>Lady Jane</cancion>
+      <cancion>Ride On, Baby</cancion>
+      <cancion>Sittin' on a Fence</cancion>
+    </canciones>
+  </disco>
+</discografia>

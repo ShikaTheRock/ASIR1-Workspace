@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+Pedido para el señor <destinatario>Andrés Delgado Martínez</destinatario>. El pedido se compone de una <pedido>bicicleta BTT 340</pedido>, precio 199€. A entregar en la <direccion>calle Soria 4-15</direccion>, el día <fecha>9-5-2017</fecha>.
+
+Pedido para la señora <destinatario>Ana Díaz Ramos</destinatario>. El pedido se compone de un ordenador <pedido>ASUS F555BA</pedido>, precio 414,90€y un <pedido>SSD Samsung T3, 500GB</pedido>, precio 189€. A entregar en la <direccion>calle Mirador 1ºA</direccion>, el día <fecha>10-5-2017</fecha>.
