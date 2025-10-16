@@ -1,0 +1,13 @@
+#!/bin/bash
+
+swapon --byte --noheadings| while read line; do 
+
+bit=$(echo $line | awk -F " " '{print $4}')
+
+if [ $bit != 0 ]; then
+  echo $line | awk -F " " '{print $1}' 
+fi
+
+done
+
+exit

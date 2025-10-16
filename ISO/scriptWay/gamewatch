@@ -1,0 +1,53 @@
+#!/bin/bash 
+
+#Da al user una pocion entre atacar y defender
+echo "Elige tu acción:"
+echo "1. Atacar"
+echo "2. Defender"
+read accion
+#Si elije atacar, define el ataque del usuario y el del enemigo, que sera en resto de una division entre un numero random y 10, sumando uno para evitar que sea 0
+if [ $accion -eq 1 ]; then
+  ataque_jugador=$(( RANDOM % 10 + 1 ))
+  ataque_enemigo=$(( RANDOM % 10 + 1 ))
+  #Si el ataque del enemigo es superior, te lo dice, si no, te dice que te ha bloqueado
+  if [ $ataque_jugador -gt $ataque_enemigo ]; then
+    echo "Tu ataque fue más fuerte. Has herido al enemigo!"
+  else
+    echo "El enemigo ha bloqueado tu ataque."
+  fi
+# Si elije defender, define el ataque del usuario y el del enemigo, que sera en resto de una division entre un numero random y 10, sumando uno para evitar que sea 0
+elif [ $accion -eq 2 ]; then
+  defensa_jugador=$(( RANDOM % 10 + 1 ))
+  ataque_enemigo=$(( RANDOM % 10 + 1 ))
+  #Si la defensa tuy es mas grande lo bloqueas, si no , te hace daño
+  if [ $defensa_jugador -gt $ataque_enemigo ]; then
+    echo "Has bloqueado el ataque del enemigo."
+  else
+    echo "El ataque del enemigo te ha alcanzado."
+  fi
+#Si ni atacas ni defiendes te dice que lo que has hecho no se puede hacer
+else
+  echo "Opción inválida."
+  # Aqui deberia de haber un exit
+fi
+# Ahora es turno del mostruo, se vuelven a calcular las stats
+if [ $(( RANDOM % 2 )) -eq 0 ]; then
+  echo "El enemigo te ataca."
+  defensa_jugador=$(( RANDOM % 10 + 1 ))
+  ataque_enemigo=$(( RANDOM % 10 + 1 ))
+  if [ $defensa_jugador -gt $ataque_enemigo ]; then
+    echo "Has bloqueado el ataque del enemigo."
+  else
+    echo "El ataque del enemigo te ha alcanzado."
+  fi
+else
+  echo "El enemigo decide defenderse."
+fi
+# Se decido una puntuacion al azar, independientemente de tus elecciones enteriores, claramente injusto y sin sentido
+resultado=$(( RANDOM % 2 ))
+#Mensaje final del juego
+if [ $resultado -eq 0 ]; then
+  echo "El daimio está satisfecho con tu desempeño."
+else
+  echo "El daimio está decepcionado con tu desempeño."
+fi

@@ -1,0 +1,118 @@
+#!/bin/bash
+#Si no esta creado, crea un archivo de configuracion donde mas tarde estacionaremos donde van los archivos por defecto
+if [ ! -d $HOME/.config/youtubeOffline/defaults ]; then
+  mkdir -p $HOME/.config/youtubeOffline/
+  touch $HOME/.config/youtubeOffline/defaults
+  echo $(pwd) > $HOME/.config/youtubeOffline/defaults
+fi
+
+#Comporbamos si somos sudo, esto es vital para operaciones que realizaremos mas adelante como pasar el youtube-dl a /bin 
+euid=$(echo $EUID)
+
+if [ $euid -ne 0 ]; then
+  echo "Son necesarios privilegios de administrador para ejecutar este programa"
+  exit 3
+else
+  sleep 0
+fi
+
+#Comprobamos argumentos, el -h muestra el menu de help, y el -d cambia el directorio default
+if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
+    echo -e "youtube-dl manager para facilitar la vida\nUso: youtubeOffline [-h / -d]\nArgumentos:\n-h o --help => Muestra las instrucciones\n-d => cambia el direcctorio por default al que los videos son mandados"
+  exit 0
+elif [ "$1" = "-d" ]; then 
+  echo "Cual desea usted formatear como directorio por defecto?"
+  echo -n "Directorio: "
+  read defdir
+  #Comprueba si el direcorio defdir existe, y si no es el caso pregunta si deberia ser creado, si no es el caso, cierra
+  if [ -d $defdir ]; then
+    defdir=$(realpath $defdir)
+    echo $defdir > $HOME/.config/youtubeOffline/defaults 
+  else
+    echo -n "Parece que el direcctorio no existe, desea crearlo? [y/n]: "
+    read createdir
+    if [ "$createdir" = "y" ] || [ "$createdir" = "Y" ]; then
+      mkdir -p $defdir
+      defdir=$(realpath $defdir)
+      echo $defdir > $HOME/.config/youtubeOffline/defaults
+    else
+      #si no existe el directorio y no quiere crearlo, pues fuera
+      exit 113
+    fi
+  fi
+fi
+
+#esta es la ubicacion por defecto del programa, si se ha eliminado mientras el programa no funcionaba, la cambia al default original
+ubi=$(cat $HOME/.config/youtubeOffline/defaults)
+if [ ! -d $ubi ]; then
+  ubi=$(pwd)
+fi
+#Comprueba si youtube-dl esta instalado, si lo esta, pregunta por una url
+while true; do
+if [ -f /bin/youtube-dl ]; then
+  echo "Inserte la URL del video a descargar (O pulse q para salir):"
+  echo -n "URL: "
+  read videourl
+  # si el user pulsa q e intro, sale del programa
+  if [ "$videourl" = "q" ] || [ "$videourl" = "Q" ]; then
+    echo "Esperamos volver a verle pronto :D"
+    exit 0
+  fi
+  #Ahora pregunta donde enviar el video, si la ubicacion no es valida, se crea el direcctorio
+  echo "Donde desea almacenar el video? (Pulse intro para depsitarlo en $ubi):"
+  echo -n "Ruta: "
+  read dirpath
+  if [ "$dirpath" = "" ]; then
+    dirpath=$(echo $ubi)
+  fi
+  if [ -d $dirpath ]; then
+    sleep 0
+  else
+    echo -n "Parece que el direcctorio no existe, desea crearlo? [y/n]: "
+    read createdir
+    if [ "$createdir" = "y" ] || [ "$createdir" = "Y" ]; then
+      mkdir -p $dirpath
+    else
+      #si el dir no existe y no quieres crearlo, poco puedo hacer
+      echo "El directorio no es valido, compruebelo y vuelva a probar"
+      exit 112
+    fi
+  fi 
+  echo "Iniciando el proceso de descarga..."
+  seedspath=$(pwd)
+
+  #PORQUE HAGO UN CD EN UN SCRIPT?? -> https://askubuntu.com/questions/1420751/how-to-specify-the-download-location-in-youtube-dl
+  #
+  #En este punto del script ya era muy tarde para cambiar del abandonado youtube-dl a yt-dlp, con lo cual me escudare en que la tare esta erronea y proseguire programando
+
+  cd $dirpath
+  youtube-dl $videourl
+  if [ $? -eq 0 ]; then
+    echo "Todo ha salido segun el plan!"
+    cd $seedspath
+    echo "Volviendo al menu principal =>"
+  else
+    echo "Oh oh, al parecer ha habido un fallo, revise youtube-dl y vuelva a intentarlo"
+    exit 200
+  fi
+  #este es el caso donde si no lo encontraba lo creaba, llama al wget y lo mueve al /bin y le da permisos
+else
+  echo "No ha sido posible enontrar el ejecutable de youtube-dl"
+  echo -n "Desea importarlo? [y/n]: "
+  read yn
+  if [ $yn = "y" ] || [ $yn = "Y" ]; then
+    echo "Importando youtube-dl..."
+    wget https://github.com/ytdl-org/ytdl-nightly/releases/download/2025.09.29/youtube-dl
+    mv youtube-dl /bin/youtube-dl
+    chmod +x /bin/youtube-dl
+    echo "Importado exitosamente"
+  elif [ $yn = "n" ] || [ $yn = "N" ]; then
+    echo "No es posible ejecutar este programa, faltan dependencias [youtube-dl]"
+    exit 1 
+  else
+    echo "No se ha escojido una opcion valida, use -h o --help"
+    exit 2
+  fi
+fi
+done
+#y ya esta
