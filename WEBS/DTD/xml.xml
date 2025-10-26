@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE inmobiliaria SYSTEM "dtd.dtd">
+<inmobiliaria>
+    <agencias>
+        <agencia>
+            <nombre>Agencia Central</nombre>
+            <email>contacto@agenciacentral.com</email>
+            <tlf>912345678</tlf>
+        </agencia>
+    </agencias>
+
+    <propietarios>
+        <propietario>
+            <nombre>Juan Pérez</nombre>
+        </propietario>
+    </propietarios>
+
+    <inmuebles>
+        <inmueble>
+            <nombre>Edificio Sol</nombre>
+            <descripcion>Un edificio moderno con vistas al mar.</descripcion>
+            <num_plantas>5</num_plantas>
+            <caracteristicas>
+                <caracteristica>Ascensor</caracteristica>
+                <caracteristica>Garaje</caracteristica>
+            </caracteristicas>
+            <referencia_propietario/>
+        </inmueble>
+    </inmuebles>
+
+    <pisos>
+        <piso>
+            <nombre>Piso Ático</nombre>
+            <descripcion>Piso con terraza y excelentes vistas.</descripcion>
+            <caracteristicas>
+                <caracteristica>Terraza</caracteristica>
+                <caracteristica>Aire acondicionado</caracteristica>
+            </caracteristicas>
+            <referencia_inmueble/>
+        </piso>
+
+        <piso>
+            <nombre>Piso Bajo</nombre>
+            <descripcion>Piso con acceso directo al jardín.</descripcion>
+            <caracteristicas>
+                <caracteristica>Jardín privado</caracteristica>
+                <caracteristica>Trastero</caracteristica>
+            </caracteristicas>
+            <referencia_inmueble/>
+        </piso>
+    </pisos>
+</inmobiliaria>

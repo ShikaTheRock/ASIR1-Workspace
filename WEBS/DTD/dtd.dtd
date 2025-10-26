@@ -1,0 +1,24 @@
+<!ELEMENT inmobiliaria (agencias, propietarios, inmuebles, pisos)>
+
+<!ELEMENT agencias (agencia+)>
+<!ELEMENT agencia (nombre, email, tlf)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT tlf (#PCDATA)>
+<!ELEMENT propietarios (propietario+)>
+<!ELEMENT propietario (nombre)>
+<!ATTLIST propietario id ID #REQUIRED>
+<!ELEMENT inmuebles (inmueble+)>
+<!ELEMENT inmueble (nombre, descripcion, num_plantas, caracteristicas, referencia_propietario)>
+<!ATTLIST inmueble id ID #REQUIRED>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT num_plantas (#PCDATA)>
+<!ELEMENT caracteristicas (caracteristica+)>
+<!ELEMENT caracteristica (#PCDATA)>
+<!ELEMENT referencia_propietario EMPTY>
+<!ATTLIST referencia_propietario refpropietario IDREF #REQUIRED>
+<!ELEMENT pisos (piso+)>
+<!ELEMENT piso (nombre, descripcion, caracteristicas, referencia_inmueble)>
+<!ATTLIST piso id ID #REQUIRED>
+<!ELEMENT referencia_inmueble EMPTY>
+<!ATTLIST referencia_inmueble refinmueble IDREF #REQUIRED>
