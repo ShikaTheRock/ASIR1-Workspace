@@ -29,8 +29,8 @@ Los comandos basicos son muy faciles, pues algunos ya han sido adoptados por wha
 
 **Os recomiendo mucho, iniciaros con esta web, para aprender las bases**
 
-Clica aqui abajo para aprender Markdown
-[](https://www.markdowntutorial.com/)
+Revisa el link para aprender Markdown
+https://www.markdowntutorial.com/
 
 Pero si no tienes tiempo o ganas, aqui tienes lo mas basicos
 
