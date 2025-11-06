@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE marcadores [
+<!ELEMENT marcadores (marcador*)>
+<!ELEMENT marcador (nombre, uri)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT uri (#PCDATA)>
+]>
+<marcadores>
+<marcador>
+<nombre>W3C</nombre>
+<uri>http://www.w3.org/</uri>
+</marcador>
+<marcador>
+<nombre>WHATWG</nombre>
+<uri>http://www.whatwg.org/</uri>
+</marcador>
+</marcadores>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE efemerides [
+<!ELEMENT efemerides (efemeride+)>
+<!ELEMENT efemeride (fecha, hecho)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT hecho (#PCDATA)>
+]>
+<efemerides>
+<efemeride>
+<fecha>20 de julio de 1969</fecha>
+<hecho>Llegada del hombre a la Luna</hecho>
+</efemeride>
+<efemeride>
+<fecha>12 de octubre de 1492</fecha>
+<hecho>Llegada de Colón a América</hecho>
+</efemeride>
+<efemeride>
+<fecha>6 de abril de 1909</fecha>
+<hecho>llegada de Robert Peary al Polo Norte</hecho>
+</efemeride>
+</efemerides>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aeropuertos [
+<!ELEMENT aeropuertos (aeropuerto*)>
+<!ELEMENT aeropuerto (nombre, cerrado*)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT cerrado (#PCDATA)>
+]>
+<aeropuertos>
+<aeropuerto>
+<nombre>Berlín Schönefeld (SFX)</nombre>
+</aeropuerto>
+<aeropuerto>
+<nombre>Berlín Tempelhof (THF)</nombre>
+<cerrado />
+</aeropuerto>
+</aeropuertos>
+
