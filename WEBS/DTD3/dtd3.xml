@@ -55,3 +55,71 @@
 </aeropuerto>
 </aeropuertos>
 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vuelos [
+<!ELEMENT vuelos (vuelo*)>
+<!ELEMENT vuelo (origen | destino)*>
+<!ELEMENT origen (#PCDATA)>
+<!ELEMENT destino (#PCDATA)>
+]>
+<vuelos>
+<vuelo>
+<origen>Valencia (VLC)</origen>
+<destino>Londres Heathrow (LHR)</destino>
+</vuelo>
+<vuelo>
+<destino>Berlín Schönefeld (SFX)</destino>
+<origen>Paris Charles de Gaulle (CDG)</origen>
+</vuelo>
+</vuelos>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reyes [
+<!ELEMENT reyes (rey | reina)*>
+<!ELEMENT rey (nombre, padre, madre)>
+<!ELEMENT reina (nombre, padre, madre)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT padre (#PCDATA)>
+<!ELEMENT madre (#PCDATA)>
+]>
+<reyes>
+<rey>
+<nombre>Felipe III</nombre>
+<padre>Felipe II</padre>
+<madre>Ana de Austria</madre>
+</rey>
+<reina>
+<nombre>Juana la Loca</nombre>
+<padre>Fernando el Católico</padre>
+<madre>Isabel la Católica</madre>
+</reina>
+<rey>
+<nombre>Carlos I</nombre>
+<padre>Felipe el Hermoso</padre>
+<madre>Juan la Loca</madre>
+</rey>
+</reyes>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE paises [
+<!ELEMENT paises (pais*)>
+<!ELEMENT pais (nombre, unionEuropea*, otan*)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT unionEuropea EMPTY>
+<!ELEMENT otan EMPTY>
+]>
+<paises>
+<pais>
+<nombre>España</nombre>
+<unionEuropea />
+<otan />
+</pais>
+<pais>
+<nombre>Noruega</nombre>
+<otan />
+</pais>
+<pais>
+<nombre>Austria</nombre>
+<unionEuropea />
+</pais>
+</paises>

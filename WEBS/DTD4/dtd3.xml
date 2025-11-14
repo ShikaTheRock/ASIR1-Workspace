@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE catalogo [
+    <!ELEMENT catalogo (producto+)>
+
+    <!ELEMENT producto (nombre, descripcion, precio, stock, (imagen | etiquetas | descatalogado)*)>
+    <!ATTLIST producto
+        codigo ID #REQUIRED>
+
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+
+    <!ELEMENT precio (#PCDATA)>
+    <!ATTLIST precio
+        moneda (USD | EUR) #IMPLIED>
+
+    <!ELEMENT stock (#PCDATA)>
+    <!ATTLIST stock
+        unidades (unidades | kgs | piezas) #REQUIRED>
+
+    <!ELEMENT imagen (#PCDATA)>
+
+    <!ELEMENT etiquetas (etiqueta+)>
+    <!ELEMENT etiqueta (#PCDATA)>
+
+    <!ELEMENT descatalogado EMPTY>
+]>
+
+<catalogo>
+    <producto codigo="P001">
+        <nombre>Camiseta</nombre>
+        <descripcion>Camiseta de algodón de manga corta</descripcion>
+        <precio moneda="USD">19.99</precio>
+        <stock unidades="unidades">100</stock>
+        <imagen>camiseta.jpg</imagen>
+        <etiquetas>
+            <etiqueta>Ropa</etiqueta>
+            <etiqueta>Moda</etiqueta>
+        </etiquetas>
+    </producto>
+
+    <producto codigo="P002">
+        <nombre>Pantalón</nombre>
+        <descripcion>Pantalón vaquero de corte recto</descripcion>
+        <precio moneda="EUR">29.99</precio>
+        <stock unidades="piezas">50</stock>
+        <descatalogado/>
+    </producto>
+
+    <producto codigo="P003">
+        <nombre>Chaqueta</nombre>
+        <descripcion>Chaqueta vaquera</descripcion>
+        <precio moneda="EUR">49.99</precio>
+        <stock unidades="piezas">30</stock>
+        <imagen>chaqueta.jpg</imagen>
+        <etiquetas>
+            <etiqueta>Ropa</etiqueta>
+            <etiqueta>Moda</etiqueta>
+        </etiquetas>
+    </producto>
+</catalogo>
