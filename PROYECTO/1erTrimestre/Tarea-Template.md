@@ -56,7 +56,7 @@ Porque? Es un local situado en una zona decente de Masanassa, lugar con bastante
 
 ### 1.2.Perfils de clients
 
-* Se nos ha sido propuesto los siguientes perfiles, a los cuales debemos de proveerles de un equipo.
+* Se nos ha sido propuesto los siguientes perfiles, a los cuales debemos de proveerles de varias opciones para un equipo, estas se dividen en "Barato", "Equilibrado" y "Profesional".
 
 - Estudiante que quiere equipos para la escuela, el instituto y la universidad.
 - Persona que quiere equipos para jugar.
@@ -66,11 +66,38 @@ Porque? Es un local situado en una zona decente de Masanassa, lugar con bastante
 
 #### Estudiante - El poratil de ofimatica
 
+* Opcion Barata : [Portátil Acer Aspire Lite 15.6" Intel Celeron N4500 4GB 128GB eMMC Plata Windows 11 S](https://www.pccomponentes.com/portatil-acer-aspire-lite-156-intel-celeron-n4500-4gb-128gb-emmc-plata-windows-11-s) - [219,00€]
+
+* Opcion Equilibrada : [Portátil HP 255 G10 15.6" Ryzen 3 8GB 512GB SSD FreeDOS WiFi 6 USB-C Plata Oscuro](https://www.pccomponentes.com/portatil-hp-255-g10-156-ryzen-3-8gb-512gb-ssd-freedos-wifi-6-usb-c-plata-oscuro) + Servicio de instalacion de sistema operativo en tienda (Opcional) - [351,20€ + 25€ = 376,2 €]
+
+* Opcion Profesional : [Portátil Lenovo IdeaPad Slim 3 Gen 8 15IRH8 Intel Core i5-13420H/16GB/1TB SSD/15.6"](https://www.pccomponentes.com/portatil-lenovo-ideapad-slim-3-gen-8-15irh8-intel-core-i5-13420h-16gb-1tb-ssd-156) - [449,00€]
+
+
 #### "Gamer" - El tope de gama
+
+* Opcion Barata : [Pc custom](https://www.pccomponentes.com/lista-de-deseos?wishListId=Kr1tTQPIgWGWaf) + Servicio de instalacion de sistema operativo en tienda (Opcional) - [958.62€ + 25€ = 983.62€] 
+
+* Opcion Equilibrada : [Portátil HP Victus Gaming 15-fa2040ns 15.6" Intel Core 7 240H 16GB 1TB SSD RTX 5060 Windows 11 Home](https://www.pccomponentes.com/portatil-hp-victus-gaming-15-fa2040ns-156-intel-core-7-240h-16gb-1tb-ssd-rtx-5060-windows-11-home-azul) - [1205,01€]
+
+* Opcion Profesional : [PC custom](https://www.pccomponentes.com/configurador/CfCa6c328) + Servicio de instalacion de sistema operativo en tienda (Opcional) -  - [4.115,74€ + 25€ = 4.140,74€]
+
 
 #### El buisnessman - Portatil
 
+
+* Opcion Barata : [Lenovo V14 G4 (14", Intel Core i5 / 8–16GB, 512GB SSD](https://www.pccomponentes.com/portatil-lenovo-v14-g4-iru-intel-core-i5-13420h-8gb-512gb-ssd-14) - [579,00€] 
+
+* Opcion Equilibrada : [Lenovo ThinkPad E14 (14", Intel Core i5 o i7, 16 GB, 512 GB SSD](https://www.pccomponentes.com/lenovo-thinkpad-e14-gen-5-intel-core-i5-1335u-16gb-512gb-ssd-14) - [869,00€]
+
+* Opcion Profesional : [Portátil PcCom Revolt 5050 AMD Ryzen 7 260/16GB/1TB SSD/RTX 5050/15.6" + Windows 11](https://www.pccomponentes.com/portatil-pccom-revolt-5050-amd-ryzen-7-260-16gb-1tb-ssd-rtx-5050-156-windows-11) - [1049,99€]
+
 #### El ciudadano promedio - Equipo multimedia
+
+* Opcion Barata : [HP - PC Chromebook 14a-na0003sl, Intel Celeron N4020, 4 GB RAM, 64 GB eMMC, gráficos Intel UHD 600, Chrome OS, Google Play Store, pantalla 14" FHD, lector Micro SD](https://www.amazon.es/HP-Chromebook-14a-na0003sl-Notebook-gr%C3%A1ficos/dp/B0928MXNM3?utm_source=chatgpt.com) - [139,51€] 
+
+* Opcion Equilibrada : [ASUS Vivobook Go 15 (E1504FA) — AMD Ryzen 5 7520U / 16 GB / 512 GB SSD / 15.6" FHD](https://www.pccomponentes.com/portatil-asus-vivobook-go-15-e1504fa-nj1354-amd-ryzen-5-7520u-16gb-512gb-ssd-156) - [369,00€]
+
+* Opcion Profesional : [Portátil Acer Aspire 3 A315-59-51SV Intel Core i5-1235U/16GB/512GB SSD/15.6"](https://www.pccomponentes.com/portatil-acer-aspire-3-a315-59-51sv-intel-core-i5-1235u-16gb-512gb-ssd-156) - [399,00€]
 
 #### El editor - El tome de gama orientado al tratamiento de imagen
 
