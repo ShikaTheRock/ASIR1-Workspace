@@ -4,49 +4,113 @@
     <agencias>
         <agencia>
             <nombre>Agencia Central</nombre>
-            <email>contacto@agenciacentral.com</email>
+            <!-- orden arbitrario: tlf, direccion, email -->
             <tlf>912345678</tlf>
+            <direccion>
+                <calle_numero>C/ Mayor, 10</calle_numero>
+                <codigo_postal>28001</codigo_postal>
+                <provincia>Madrid</provincia>
+                <pais>España</pais>
+            </direccion>
+            <email>contacto@agenciacentral.com</email>
         </agencia>
     </agencias>
 
     <propietarios>
-        <propietario>
+        <!-- propietario con id (obligatorio) y su direccion (sin país: el código postal va al final tras provincia) -->
+        <propietario id="P001">
             <nombre>Juan Pérez</nombre>
+            <direccion>
+                <calle_numero>C/ Olmo, 5</calle_numero>
+                <!-- aquí omitimos <pais>, por lo que el código postal se sitúa al final -->
+                <provincia>Barcelona</provincia>
+                <codigo_postal>08002</codigo_postal>
+            </direccion>
         </propietario>
     </propietarios>
 
     <inmuebles>
-        <inmueble>
+        <inmueble id="I100">
             <nombre>Edificio Sol</nombre>
-            <descripcion>Un edificio moderno con vistas al mar.</descripcion>
+            <direccion>
+                <calle_numero>Avenida Mar, 33</calle_numero>
+                <codigo_postal>29620</codigo_postal>
+                <provincia>Málaga</provincia>
+                <pais>España</pais>
+            </direccion>
+
+            <!-- descripcion_inmueble permite texto mezclado con referencias a pisos -->
+            <descripcion_inmueble>
+                Un edificio moderno con vistas al mar. El mejor piso del inmueble
+                <refpiso nompiso="A1001">A1001</refpiso>
+                está en nuestro catálogo. También ofrecemos el piso
+                <refpiso nompiso="A1002">A1002</refpiso>
+                para visitas.
+            </descripcion_inmueble>
+
             <num_plantas>5</num_plantas>
             <caracteristicas>
                 <caracteristica>Ascensor</caracteristica>
                 <caracteristica>Garaje</caracteristica>
             </caracteristicas>
-            <referencia_propietario/>
+            <referencia_propietario refpropietario="P001"/>
         </inmueble>
     </inmuebles>
 
     <pisos>
-        <piso>
+        <!-- Asegurado: al menos dos pisos -->
+        <piso id="A1001">
             <nombre>Piso Ático</nombre>
-            <descripcion>Piso con terraza y excelentes vistas.</descripcion>
+
+            <!-- descripcion_piso es ANY: puede contener texto arbitrario o elementos bien formados -->
+            <descripcion_piso>
+                Piso con terraza y excelentes vistas. Información adicional: orientación sur.
+            </descripcion_piso>
+
             <caracteristicas>
                 <caracteristica>Terraza</caracteristica>
                 <caracteristica>Aire acondicionado</caracteristica>
             </caracteristicas>
-            <referencia_inmueble/>
+
+            <referencia_inmueble refinmueble="I100"/>
+
+            <!-- registros internos: variante con fecha + info -->
+            <registros>
+                <registro>
+                    <fecha>2025-06-01</fecha>
+                    <info>Registro de mantenimiento: revisión de calefacción realizada.</info>
+                </registro>
+            </registros>
         </piso>
 
-        <piso>
+        <piso id="A1002">
             <nombre>Piso Bajo</nombre>
-            <descripcion>Piso con acceso directo al jardín.</descripcion>
+
+            <descripcion_piso>
+                Piso con acceso directo al jardín. Nota: ideal para familias.
+            </descripcion_piso>
+
             <caracteristicas>
                 <caracteristica>Jardín privado</caracteristica>
                 <caracteristica>Trastero</caracteristica>
             </caracteristicas>
-            <referencia_inmueble/>
+
+            <referencia_inmueble refinmueble="I100"/>
+
+            <!-- registros internos: variante con registros anidados -->
+            <registros>
+                <registro>
+                    <!-- este registro contiene registros anidados -->
+                    <registro>
+                        <fecha>2024-12-10</fecha>
+                        <info>Inspección: estado OK.</info>
+                    </registro>
+                    <registro>
+                        <fecha>2025-01-15</fecha>
+                        <info>Pequeña reparación de fontanería.</info>
+                    </registro>
+                </registro>
+            </registros>
         </piso>
     </pisos>
 </inmobiliaria>

@@ -1,0 +1,16 @@
+<albaran id-albaran="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="albaran.xsd">
+    <remitente>texto</remitente>
+    <destinatario>
+        <nom-ape>texto</nom-ape>
+        <dirpostal>texto</dirpostal>
+        <ciudad>texto</ciudad>
+        <pais>texto</pais>
+    </destinatario>
+    <item>
+        <descripcion>texto</descripcion>
+        <nota>texto</nota>
+        <cantidad>1</cantidad>
+        <precio>2.53</precio>
+    </item>
+</albaran>

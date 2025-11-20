@@ -101,4 +101,17 @@ Porque? Es un local situado en una zona decente de Masanassa, lugar con bastante
 
 #### El editor - El tome de gama orientado al tratamiento de imagen
 
+* Opcion Barata : [Pc custom](https://www.pccomponentes.com/configurador/5571D1403) + Servicio de instalacion de sistema operativo en tienda (Opcional) - [911,69€ + 25€ = 936,69€] 
+
+* Opcion Equilibrada : [Pc custom](https://www.pccomponentes.com/configurador/8b9e9eDaD) + Servicio de instalacion de sistema operativo en tienda (Opcional) - [1.567,83€ + 25€ = 1.592,83€]
+
+* Opcion Profesional : [Pc custom](https://www.pccomponentes.com/configurador/9cFa0e74E) + Servicio de instalacion de sistema operativo en tienda (Opcional) - [2.799,73€ + 25€ = 2.824,73€]
+
+### 1.4 Reparació d’equips
+
+* En Type&Fix ofrecemos un maravilloso servicio de reparacion de equipos.
+
+Las reparaciones simples de un movil suelen rondar entre la media hora y los  45 min para reparaciones simples, y hasta 6 horas para mas complejas
+
+En Type&Fix, el precio de la reparacion para moviles consta del precio de la pieza + el precio/hora del tecnico, el cual es de 10€ / ½hora
 

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name='Envios'>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name='Clientes'>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name='Cliente' type='TIPOCliente' minOccurs='0' maxOccurs='unbounded' />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name='Pedidos'>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name='Pedido' type='TIPOPedido' minOccurs='0' maxOccurs='unbounded' />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:key name='ClaveIDCliente'>
+      <xs:selector xpath='Clientes/Cliente'/>
+      <xs:field xpath='@IDCliente'/>
+    </xs:key>
+    <xs:keyref name='RefClaveIDCliente' refer='ClaveIDCliente'>
+      <xs:selector xpath='Pedidos/Pedido'/>
+      <xs:field xpath='IDCliente'/>
+    </xs:keyref>
+  </xs:element>
+  <xs:complexType name='TIPOCliente'>
+    <xs:sequence>
+      <xs:element name='NomEmpresa' type='xs:string'/>
+      <xs:element name='NomContacto' type='xs:string'/>
+      <xs:element name='TratamientoContacto' type='xs:string'/>
+      <xs:element name='tlf' type='xs:string'/>
+      <xs:element name='fax' minOccurs='0' type='xs:string'/>
+      <xs:element name='DireccionCompleta' type='TIPODireccion'/>
+    </xs:sequence>
+    <xs:attribute name='IDCliente' type='xs:token'/>
+  </xs:complexType>
+  <xs:complexType name='TIPODireccion'>
+    <xs:sequence>
+      <xs:element name='callenumpispta' type='xs:string'/>
+      <xs:element name='ciudad' type='xs:string'/>
+      <xs:element name='prov-est' type='xs:string'/>
+      <xs:element name='cp' type='xs:string' />
+      <xs:element name='pais' type='xs:string'/>
+    </xs:sequence>
+    <xs:attribute name='IDCliente' type='xs:token'/>
+  </xs:complexType>
+  <xs:complexType name='TIPOPedido'>
+    <xs:sequence>
+      <xs:element name='IDCliente' type='xs:token'/>
+      <xs:element name='IDEmpleado' type='xs:token'/>
+      <xs:element name='FechaPedido' type='xs:dateTime'/>
+      <xs:element name='RequiredDate' type='xs:dateTime'/>
+      <xs:element name='InfoEnvio' type='TIPOInfoEnvio'/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name='TIPOInfoEnvio'>
+    <xs:sequence>
+      <xs:element name='EnvioVia' type='xs:integer'/>
+      <xs:element name='Carga' type='xs:decimal'/>
+      <xs:element name='NomEnvio' type='xs:string'/>
+      <xs:element name='DirEnvio' type='xs:string'/>
+      <xs:element name='CiudadEnvio' type='xs:string'/>
+      <xs:element name='prov-est-Envio' type='xs:string'/>
+      <xs:element name='cpEnvio' type='xs:string'/>
+      <xs:element name='paisEnvio' type='xs:string'/>
+    </xs:sequence>
+    <xs:attribute name='fechaEnviado' type='xs:dateTime'/>
+  </xs:complexType>
+</xs:schema>

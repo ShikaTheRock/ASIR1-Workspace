@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="albaran">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="remitente" type="xs:string"/>
+      <xs:element name="destinatario">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="nom-ape" type="xs:string"/>
+            <xs:element name="dirpostal" type="xs:string"/>
+            <xs:element name="ciudad" type="xs:string"/>
+            <xs:element name="pais" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="item" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="descripcion" type="xs:string"/>
+            <xs:element name="nota" type="xs:string" minOccurs="0"/>
+            <xs:element name="cantidad" type="xs:positiveInteger"/>
+            <xs:element name="precio" type="xs:decimal"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="id-albaran" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+</xs:schema>

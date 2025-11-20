@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Envios>
+  <Clientes>
+    <Cliente IDCliente="1">
+      <NomEmpresa>Empresa</NomEmpresa>
+      <NomContacto>Nombre</NomContacto>
+      <TratamientoContacto>Sr.</TratamientoContacto>
+      <tlf>123456789</tlf>
+      <fax>123456789</fax>
+      <DireccionCompleta IDCliente="1">
+        <callenumpispta>C/ calle 10, 3, 10</callenumpispta>
+        <ciudad>Madrid</ciudad>
+        <prov-est>Madrid</prov-est>
+        <cp>46910</cp>
+        <pais>España</pais>
+      </DireccionCompleta>
+    </Cliente>
+  </Clientes>
+
+  <Pedidos>
+    <Pedido>
+      <IDCliente>1</IDCliente>
+      <IDEmpleado>e1</IDEmpleado>
+      <FechaPedido>2025-02-15T10:30:00</FechaPedido>
+      <RequiredDate>2025-02-20T00:00:00</RequiredDate>
+      <InfoEnvio fechaEnviado="2025-02-16T14:00:00">
+        <EnvioVia>1</EnvioVia>
+        <Carga>125.50</Carga>
+        <NomEnvio>Transportes Rápidos</NomEnvio>
+        <DirEnvio>C/ calle 10, 3, 10</DirEnvio>
+        <CiudadEnvio>Madrid</CiudadEnvio>
+        <prov-est-Envio>Madrid</prov-est-Envio>
+        <cpEnvio>46910</cpEnvio>
+        <paisEnvio>España</paisEnvio>
+      </InfoEnvio>
+    </Pedido>
+  </Pedidos>
+</Envios>

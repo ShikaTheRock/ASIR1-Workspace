@@ -1,24 +1,74 @@
+<!-- DTD modificado para EJERCICIOS 05–08 -->
+
 <!ELEMENT inmobiliaria (agencias, propietarios, inmuebles, pisos)>
 
+<!-- AGENCIAS -->
 <!ELEMENT agencias (agencia+)>
-<!ELEMENT agencia (nombre, email, tlf)>
+<!-- ahora el orden de email, tlf y direccion puede ser arbitrario (todas las permutaciones) -->
+<!ELEMENT agencia (nombre,
+    (email, tlf, direccion) |
+    (email, direccion, tlf) |
+    (tlf, email, direccion) |
+    (tlf, direccion, email) |
+    (direccion, email, tlf) |
+    (direccion, tlf, email)
+)>
 <!ELEMENT nombre (#PCDATA)>
+
+<!-- DIRECCION (reutilizable) -->
+<!ELEMENT direccion (calle_numero, (codigo_postal, provincia, pais?) | (provincia, codigo_postal))>
+<!ELEMENT calle_numero (#PCDATA)>
+<!ELEMENT codigo_postal (#PCDATA)>
+<!ELEMENT provincia (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+
 <!ELEMENT email (#PCDATA)>
 <!ELEMENT tlf (#PCDATA)>
+
+<!-- PROPIETARIOS -->
 <!ELEMENT propietarios (propietario+)>
-<!ELEMENT propietario (nombre)>
+<!ELEMENT propietario (nombre, direccion)>
 <!ATTLIST propietario id ID #REQUIRED>
+
+<!-- INMUEBLES -->
 <!ELEMENT inmuebles (inmueble+)>
-<!ELEMENT inmueble (nombre, descripcion, num_plantas, caracteristicas, referencia_propietario)>
+<!-- añadido direccion después de nombre -->
+<!-- descripcion_inmueble permite PCDATA mezclado con referencias a pisos (refpiso) -->
+<!ELEMENT inmueble (nombre, direccion, descripcion_inmueble, num_plantas, caracteristicas, referencia_propietario)>
 <!ATTLIST inmueble id ID #REQUIRED>
-<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT descripcion_inmueble (#PCDATA | refpiso)*>
 <!ELEMENT num_plantas (#PCDATA)>
-<!ELEMENT caracteristicas (caracteristica+)> 
+
+<!-- refpiso: elemento referenciando un piso mediante IDREF -->
+<!ELEMENT refpiso (#PCDATA)>
+<!ATTLIST refpiso nompiso IDREF #REQUIRED>
+
+<!-- CARACTERÍSTICAS: ahora mínimo 2 y máximo 5 -->
+<!ELEMENT caracteristicas (caracteristica, caracteristica, caracteristica?, caracteristica?, caracteristica?)>
 <!ELEMENT caracteristica (#PCDATA)>
+
+<!-- referencia a propietario -->
 <!ELEMENT referencia_propietario EMPTY>
 <!ATTLIST referencia_propietario refpropietario IDREF #REQUIRED>
-<!ELEMENT pisos (piso+)>
-<!ELEMENT piso (nombre, descripcion, caracteristicas, referencia_inmueble)>
+
+<!-- PISOS -->
+<!-- asegurar al menos dos pisos: piso, piso, piso* -->
+<!ELEMENT pisos (piso, piso, piso*)>
+<!-- cada piso ahora: nombre, descripcion_piso (ANY), caracteristicas, referencia_inmueble, opcional registros -->
+<!ELEMENT piso (nombre, descripcion_piso, caracteristicas, referencia_inmueble, registros?)>
 <!ATTLIST piso id ID #REQUIRED>
+<!-- descripcion_piso permite ANY (texto arbitrario y/o elementos bien formados) -->
+<!ELEMENT descripcion_piso ANY>
+
 <!ELEMENT referencia_inmueble EMPTY>
 <!ATTLIST referencia_inmueble refinmueble IDREF #REQUIRED>
+
+<!-- REGISTROS INTERNOS (EJERCICIO 08) -->
+<!ELEMENT registros (registro+)>
+<!-- Un registro puede ser:
+     - fecha + info (texto), o
+     - una secuencia de uno o más registros anidados
+-->
+<!ELEMENT registro ((fecha, info) | (registro+))>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT info (#PCDATA)>
