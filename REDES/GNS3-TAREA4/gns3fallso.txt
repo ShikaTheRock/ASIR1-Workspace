@@ -1,0 +1,11 @@
+Los pc que fallaban eran los 2, 4, 7, 12 y  6 
+
+2 - Falla la ip, no esa la 110, sino la 120
+
+4 - Dns mal
+
+6 - Mal gateway
+
+7 - Mal gateway, 120 en logar de 130
+
+12 - Un . al final del dns
