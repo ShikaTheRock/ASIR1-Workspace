@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="edadMax">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="16"/>
+            <xs:maxInclusive value="26"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="dniLetra">
+        <xs:restriction base="xs:string">
+            <!-- 8 dígitos seguidos de 1 letra mayúscula -->
+            <xs:pattern value="[0-9]{8}[A-Z]"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="numLong">
+        <xs:restriction base="xs:integer">
+            <!-- 8 dígitos seguidos de 1 letra mayúscula -->
+            <xs:pattern value="[0-9]{9}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="alumno">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string" />
+                <xs:element name="dni" type="dniLetra" />
+                <xs:element name="direccion" type="xs:string" />
+                <xs:element name="edad" type="edadMax" />
+                <xs:element name="telefono" type="xs:integer" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

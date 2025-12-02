@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:simpleType name="nombreType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="descripcionType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="500"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="emailType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[^@]+@[^@]+\.[^@]+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="telefonoType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="5"/>
+            <xs:maxLength value="20"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="confortType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="A"/>
+            <xs:enumeration value="B"/>
+            <xs:enumeration value="C"/>
+            <xs:enumeration value="D"/>
+            <xs:enumeration value="E"/>
+            <xs:enumeration value="F"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="fechaType">
+        <xs:restriction base="xs:date"/>
+    </xs:simpleType>
+
+    <xs:element name="inmobiliaria">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="agencias">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="agencia" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="nombreType"/>
+                                        <xs:element name="email" type="emailType"/>
+                                        <xs:element name="tlf" type="telefonoType"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="propietarios">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="propietario" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="nombreType"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="idpropietario" type="xs:ID" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="inmuebles">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="inmueble" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="nombreType"/>
+                                        <xs:element name="numpisos" type="xs:positiveInteger"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="idinmueble" type="xs:ID" use="required"/>
+                                    <xs:attribute name="propietarioRef" type="xs:IDREF" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="pisos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="piso" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="nombreType"/>
+                                        <xs:element name="descripcion" type="descripcionType"/>
+                                        <xs:element name="tipo" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="idpiso" type="xs:ID" use="required"/>
+                                    <xs:attribute name="inmuebleRef" type="xs:IDREF" use="required"/>
+                                    <xs:attribute name="confort" type="confortType" use="required"/>
+                                    <xs:attribute name="fechapub" type="fechaType" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

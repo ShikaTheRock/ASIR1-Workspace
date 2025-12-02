@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Código Postal válido -->
+    <xs:simpleType name="cpCrrect">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="46000"/>
+            <xs:maxInclusive value="46999"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:group name="direccionGrupo">
+        <xs:all>
+            <xs:element name="calle" type="xs:string" />
+            <xs:element name="numero" type="xs:integer" />
+            <xs:element name="ciudad" type="xs:string" />
+            <xs:element name="cp" type="cpCrrect" />
+            <xs:element name="provincia" type="xs:string" />
+        </xs:all>
+    </xs:group>
+
+    <xs:element name="alumno">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="nombre" type="xs:string" />
+
+                <xs:element name="direccion">
+                    <xs:complexType>
+                        <xs:group ref="direccionGrupo"/>
+                    </xs:complexType>
+                </xs:element>
+                <!-- esto ya cumple lo del ej 4 -->
+                <xs:choice>
+                    <xs:element name="telefonoMovil"  type="xs:string" />
+                    <xs:element name="telefonoFijo"   type="xs:string" />
+                </xs:choice>
+
+            </xs:sequence>
+
+            <xs:attribute name="dni" type="xs:integer" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

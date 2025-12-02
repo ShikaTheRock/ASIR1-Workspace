@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="complejo1.xsd" dni="11111111">
+    <nombre>Lorenzo Pérez</nombre>
+    <direccion>
+        <calle>Banderas</calle>
+        <numero>7</numero> 
+        <ciudad>Alfafar</ciudad>
+        <cp>46910</cp> 
+        <provincia>Valencia</provincia>
+    </direccion>
+    <telefono>961555555</telefono>
+</alumno>

@@ -1,0 +1,26 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# Esta es la red nat 
+allow-hotplug NAT_NET
+iface NAT_NET inet dhcp
+
+#ESTA ES LA RED PARA COMINICARME CON MI COMPAÑERO
+allow-hotplug enp0s8 
+auto enp0s8 
+iface enp0s8  inet static #AQUI INDICO QUE VA A SER ESTATICA
+address 192.168.4.208 #LA IP FIJA QUE ES LA DE CLASE + 200
+netmask 255.255.255.0 #LA MASCARA DE RED
+gateway 192.168.4.254 #A DONDE TIENE QUE IR PARA BUSCAR INTERNET
+dns-nameservers 10.239.3.7 10.239.3.8 # LOS DNS DE CONSELLERIA
+
+
+
+# This is an autoconfigured IPv6 interface
+iface enp0s3 inet6 auto

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inmobiliaria xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="02_c.xsd">
+	
+	<agencias>
+        <agencia>
+            <nombre>První realitní</nombre>
+            <email>info@realitka.cz</email>
+            <tlf>+420 481 234 567</tlf>
+        </agencia>
+	</agencias>
+    
+    <propietarios>
+        <propietario>
+            <nombre>Alexandr Kendík</nombre>
+        </propietario>
+	</propietarios>
+    
+    <inmuebles>
+        <inmueble>
+            <nombre>Krb</nombre>
+            <numpisos>20</numpisos>
+        </inmueble>
+	</inmuebles>
+    
+    <pisos>
+        <piso>
+            <nombre>K0101</nombre>
+            <descripcion>Small flat with no windows</descripcion>
+            <tipo>1234</tipo>
+        </piso>
+        <piso>
+            <nombre>K1501</nombre>
+            <descripcion>Luxury flat with a huge terrace</descripcion>
+            <tipo>12345</tipo>
+        </piso>
+	</pisos>
+    
+</inmobiliaria>
