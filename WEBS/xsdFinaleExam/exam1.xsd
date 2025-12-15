@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="inventario">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="objeto" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:choice>
+                            <xs:element name="mesa">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="tipo" minOccurs="0" type="xs:string"/>
+                                        <xs:element name="localizacion" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <xs:element name="ordenador">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="procesador" minOccurs="0">
+                                            <xs:complexType mixed="true">
+                                                <xs:attribute name="fabricante" type="xs:string" use="optional"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="memoria" minOccurs="0">
+                                            <xs:complexType mixed="true">
+                                                <xs:attribute name="unidad" type="xs:string" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="discoduro" minOccurs="0" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:choice>
+                        <xs:attribute name="codigo"
+                                      type="codigoType"
+                                      use="optional"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="codigoType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Za-z]{2}[0-9]{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

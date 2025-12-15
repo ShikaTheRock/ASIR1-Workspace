@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE inmobiliaria SYSTEM "data_c.dtd">
+<inmobiliaria language="ES">
+    
+    <!-- Lista de agencias -->
+    <agencias>
+        <agencia>
+            <nombre>Valinmo</nombre>
+            <email>info@valinmo.es</email>
+            <tlf>+34 96-321-3711</tlf>
+            <direccion>
+                <calleynum>Avda. Malvarrosa, 123</calleynum>
+                <cp>46011</cp>
+                <est-prov>Valencia</est-prov>
+                <pais>España</pais>
+            </direccion>
+            <empleado>
+				<nomEmp>Juan</nomEmp>
+				<apellidos>Palomo</apellidos>
+            </empleado>
+            <empleado>
+				<nomEmp>Patricio</nomEmp>
+				<apellidos>De Juan</apellidos>
+            </empleado>
+            <empleado>
+				<nomEmp>Ernesto</nomEmp>
+				<apellidos>Grau</apellidos>
+            </empleado>
+        </agencia>
+    </agencias>
+    
+    <!-- Lista de propietarios -->
+    <propietarios>
+        <propietario idpropietario="pr1">
+            <nombre>RES Promotores, S.A.U.</nombre>
+            <direccion>
+                <calleynum>Av. Primat Reig, 168</calleynum>
+                <cp>46009</cp>
+                <est-prov>Valencia</est-prov>
+                <pais>España</pais>
+            </direccion>
+        </propietario>
+        <propietario idpropietario="pr2">
+            <nombre>Piloc Asociados</nombre>
+            <direccion>
+                <calleynum>Isaac Peral, 18</calleynum>
+                <cp>46011</cp>
+                <est-prov>Valencia</est-prov>
+                <pais>España</pais>
+            </direccion>
+        </propietario>
+        <propietario idpropietario="pr3">
+            <nombre>Alejandro Coral</nombre>
+            <direccion>
+                <calleynum>Poniente, 23</calleynum>
+                <cp>16004</cp>
+                <est-prov>Cuenca</est-prov>
+                <pais>España</pais>
+            </direccion>
+        </propietario>
+        <propietario idpropietario="pr2a">
+            <nombre>Piloc Asociados</nombre>
+            <direccion>
+                <calleynum>Duque de Gaeta, 2</calleynum>
+                <cp>46011</cp>
+                <est-prov>Valencia</est-prov>
+                <pais>España</pais>
+            </direccion>
+        </propietario>
+    </propietarios>
+    
+    <!-- Lista de inmuebles -->
+    <inmuebles>
+		
+        <inmueble idinmueble="in1" propietarioRef="pr1">
+            <nombre>Torres Mol</nombre>
+            <direccion>
+                <calleynum>Avenida del Oeste, 16</calleynum>
+                <est-prov>Valencia</est-prov>
+                <cp>46002</cp>
+            </direccion>
+            <numpisos>154</numpisos>
+            <caracteristicas>
+                <caracteristica>ascensor</caracteristica>
+                <caracteristica>parking</caracteristica>
+                <caracteristica>seguridad</caracteristica>
+                <caracteristica>vistas</caracteristica>
+                <caracteristica>metro</caracteristica>
+            </caracteristicas>
+            <empleado>
+				<nomEmp>Juan</nomEmp>
+				<apellidos>Palomo</apellidos>
+            </empleado>
+        </inmueble>
+        
+        <inmueble idinmueble="in3">
+            <nombre>Edificio Arregui</nombre>
+            <direccion>
+                <calleynum>Quart de la Mar, 16</calleynum>
+                <est-prov>Valencia</est-prov>
+                <cp>46002</cp>
+            </direccion>
+            <numpisos>1</numpisos>
+            <caracteristicas>
+                <caracteristica>Exterior a plaza</caracteristica>
+                <caracteristica>metro</caracteristica>
+            </caracteristicas>
+        </inmueble>
+        
+    </inmuebles>
+    
+    <!-- Lista de pisos -->
+    <pisos>
+		
+        <piso idpiso="pi1" inmuebleRef="in1" confort="F">
+            <nombre>A1001</nombre>
+            <tipo>1234</tipo>
+            <datos>Piso pequeño sin ventanas. Chinches incluidas.</datos>
+            <registro>
+                <registro>
+                    <fecha>2023-07-11</fecha><texto>Se observan chinches.</texto>
+                </registro>
+                <registro>
+                    <fecha>2023-07-12</fecha><texto>Se realiza fumigación.</texto>
+                </registro>
+            </registro>
+            <registro>
+                <fecha><?php echo fecha("Y-m-d"); ?></fecha>
+                <texto>Se observan chinches de nuevo.</texto>
+            </registro>
+        </piso>
+		
+        <piso idpiso="pi2" inmuebleRef="in1" confort="A">
+            <nombre>A2601</nombre>
+            <tipo>46001</tipo>
+            <datos>
+                <descripcion>Piso espléndido con jardín en la azotea. Buenas vistas, 200 m2.</descripcion>
+                <nombre>Piso espléndido</nombre>
+                <descripcion>46001</descripcion>
+                &lt;span class=&quot;btn&quot;&gt;Button&lt;/span&gt;
+                <![CDATA[
+                    <span class=“btn”>Botón</span>
+                ]]>
+            </datos>
+            <caracteristicas>
+                <caracteristica>ascensor privado</caracteristica>
+                <caracteristica>jardín</caracteristica>
+                <caracteristica>piscina</caracteristica>
+                <caracteristica>2 baños completos</caracteristica>
+            </caracteristicas>
+        </piso>
+        
+        <piso idpiso="pi3" inmuebleRef="in1" confort="B">
+            <nombre>A654</nombre>
+            <tipo>12345</tipo>
+            <datos>
+                <descripcion>Buenas vistas, desinsectado.</descripcion>
+            </datos>
+            <caracteristicas>
+                <caracteristica>moqueta</caracteristica>
+                <caracteristica>cocina completa grande</caracteristica>
+                <caracteristica>2 baños completos</caracteristica>
+            </caracteristicas>
+        </piso>
+        
+        <piso idpiso="pi4" inmuebleRef="in1" confort="C">
+            <nombre>A0001</nombre>
+            <tipo>456</tipo>
+            <datos>
+                <descripcion>Local subterráneo, de uso preferible como local de ensayo o actividad ruidosa.</descripcion>
+            </datos>
+            <caracteristicas>
+                <caracteristica>aislamiento acústico</caracteristica>
+                <caracteristica>poca luz</caracteristica>
+                <caracteristica>no muy grande</caracteristica>
+            </caracteristicas>
+            <piso idpiso="pi4a" inmuebleRef="in1" confort="C">
+                <nombre>A0001-A</nombre>
+                <tipo>45</tipo>
+                <datos>
+                    <descripcion>Sala A. Dispone de una sala de estudio.</descripcion>
+                </datos>
+                <caracteristicas>
+                    <caracteristica>aislamiento acústico</caracteristica>
+                    <caracteristica>poca luz</caracteristica>
+                    <caracteristica>no muy grande</caracteristica>
+                </caracteristicas>
+                <piso idpiso="pi4a1" inmuebleRef="in1" confort="C">
+                    <nombre>A0001-A1</nombre>
+                    <tipo>26</tipo>
+                    <datos>
+                        <descripcion>Sala de estudio.</descripcion>
+                    </datos>
+                    <caracteristicas>
+                        <caracteristica>aislamiento acústico</caracteristica>
+                        <caracteristica>poca luz</caracteristica>
+                        <caracteristica>no muy grande</caracteristica>
+                        <caracteristica>una sala</caracteristica>
+                    </caracteristicas>
+                </piso>
+            </piso>
+            <piso idpiso="pi4b" inmuebleRef="in1" confort="C">
+                <nombre>A0001-B</nombre>
+                <tipo>46</tipo>
+                <datos>
+                    <descripcion>Sin ventanas.</descripcion>
+                </datos>
+                <caracteristicas>
+                    <caracteristica>aislamiento acústico</caracteristica>
+                    <caracteristica>poca luz</caracteristica>
+                    <caracteristica>no muy grande</caracteristica>
+                    <caracteristica>mazmorra</caracteristica>
+                </caracteristicas>
+            </piso>
+        </piso>
+        
+    </pisos>
+    
+</inmobiliaria>

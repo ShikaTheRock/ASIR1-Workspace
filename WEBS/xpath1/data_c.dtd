@@ -1,0 +1,74 @@
+<!ELEMENT inmobiliaria (agencias, propietarios, inmuebles, pisos)>
+<!ATTLIST inmobiliaria
+	language CDATA #FIXED "ES">
+
+<!ELEMENT agencias (agencia*)>
+<!ELEMENT propietarios (propietario*)>
+<!ELEMENT inmuebles (inmueble*)>
+<!ELEMENT pisos (piso, piso+)>
+
+<!ELEMENT agencia (nombre, (
+	(direccion, email, tlf) |
+	(direccion, tlf, email) |
+	(email, direccion, tlf) |
+	(email, tlf, direccion) |
+	(tlf, direccion, email) |
+	(tlf, email, direccion)
+	), empleado*)>
+
+<!ELEMENT empleado (nomEmp, apellidos)>
+<!ELEMENT nomEmp (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+
+<!ELEMENT propietario (nombre, direccion)>
+<!ATTLIST propietario
+	idpropietario ID #REQUIRED>
+
+<!ENTITY % modoEstandar "INCLUDE">
+<!ENTITY % modoExtendido "IGNORE">
+
+<![ %modoEstandar; [
+	<!ELEMENT inmueble (nombre, direccion, numpisos, caracteristicas?, empleado?)>
+	]]>
+
+<![ %modoExtendido; [
+	<!ELEMENT inmueble (nombre, direccion, descripcion, numpisos, caracteristicas?, empleado?)>
+	]]>
+
+<!ATTLIST inmueble
+	idinmueble ID #REQUIRED
+	propietarioRef IDREF #IMPLIED>
+
+<!ELEMENT piso (nombre, tipo, datos, caracteristicas?, registro*, piso*)>
+<!ATTLIST piso
+	idpiso ID #REQUIRED
+	inmuebleRef IDREF #REQUIRED
+	confort (A | B | C | D | E | F) "F">
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT tlf (#PCDATA)>
+<!ELEMENT numpisos (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+
+<!ELEMENT caracteristicas (caracteristica, caracteristica, caracteristica?, caracteristica?, caracteristica?)>
+<!ELEMENT caracteristica (#PCDATA)>
+
+<!ELEMENT registro ((fecha, texto) | registro+)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT texto (#PCDATA)>
+
+<!ELEMENT descripcion (#PCDATA | pisoRef)*>
+<!ELEMENT pisoRef (#PCDATA)>
+<!ATTLIST pisoRef
+	pisoNombre IDREF #REQUIRED>
+
+<!ELEMENT datos ANY>
+
+<!ELEMENT direccion (calleynum, ((cp, est-prov, pais) | (est-prov, cp)))>
+<!ELEMENT calleynum (#PCDATA)>
+<!ELEMENT cp (#PCDATA)>
+<!ELEMENT est-prov (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+
+<!ENTITY sup2 "²">
