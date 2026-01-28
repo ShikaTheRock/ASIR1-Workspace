@@ -72,6 +72,6 @@ page-background: ./watermark.jpg
 
 - Usuario: usuario
 
--Contraseña: 12341234
+- Contraseña: 12341234
 
 

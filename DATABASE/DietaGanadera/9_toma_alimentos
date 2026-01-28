@@ -1,0 +1,10 @@
+
+MariaDB [dieta_ganadera]> DESC toma_alimentos;
++----------+---------+------+-----+---------+-------+
+| Field    | Type    | Null | Key | Default | Extra |
++----------+---------+------+-----+---------+-------+
+| cod_toma | int(11) | NO   | PRI | NULL    |       |
+| cod_alim | int(11) | NO   | PRI | NULL    |       |
+| cantidad | float   | NO   |     | NULL    |       |
++----------+---------+------+-----+---------+-------+
+3 rows in set (0,001 sec)

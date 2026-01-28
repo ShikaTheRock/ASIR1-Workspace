@@ -1,0 +1,14 @@
+
+MariaDB [dieta_ganadera]> DESC animal
+    -> ;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| cod_animal | int(11)      | NO   | PRI | NULL    |       |
+| tipo       | varchar(100) | NO   |     | NULL    |       |
+| peso       | float        | NO   |     | NULL    |       |
+| anyo_nac   | int(11)      | NO   |     | NULL    |       |
+| utilidad   | varchar(100) | NO   |     | NULL    |       |
+| produccion | varchar(100) | NO   |     | NULL    |       |
+| od_animal  | varchar(100) | YES  |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+

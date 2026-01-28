@@ -1,0 +1,8 @@
+MariaDB [dieta_ganadera]> DESC animal_toma;
++------------+---------+------+-----+---------+-------+
+| Field      | Type    | Null | Key | Default | Extra |
++------------+---------+------+-----+---------+-------+
+| cod_animal | int(11) | NO   | PRI | NULL    |       |
+| cod_toma   | int(11) | NO   | PRI | NULL    |       |
++------------+---------+------+-----+---------+-------+
+2 rows in set (0,001 sec)

@@ -1,0 +1,9 @@
+MariaDB [dieta_ganadera]> DESC nutrientes;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| cod_nutri | int(11)      | NO   | PRI | NULL    |       |
+| nom_nutri | varchar(100) | NO   | UNI | NULL    |       |
+| magnitud  | varchar(100) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+3 rows in set (0,001 sec)

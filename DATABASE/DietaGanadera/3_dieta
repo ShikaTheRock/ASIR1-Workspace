@@ -1,0 +1,8 @@
+MariaDB [dieta_ganadera]> DESC dieta;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| cod_dieta | int(11)      | NO   | PRI | NULL    |       |
+| finalidad | varchar(100) | NO   |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+2 rows in set (0,001 sec)

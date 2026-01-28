@@ -1,0 +1,10 @@
+
+Database changed
+MariaDB [dieta_ganadera]> DESC nutrientes_alimentos;
++-----------+---------+------+-----+---------+-------+
+| Field     | Type    | Null | Key | Default | Extra |
++-----------+---------+------+-----+---------+-------+
+| cod_alim  | int(11) | NO   | PRI | NULL    |       |
+| cod_nutri | int(11) | NO   | PRI | NULL    |       |
++-----------+---------+------+-----+---------+-------+
+2 rows in set (0,001 sec)

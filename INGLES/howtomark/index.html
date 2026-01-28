@@ -1,0 +1,156 @@
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shika's bash corner</title>
+  <link href="https://shikatherock.neocities.org/workshop.css" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/proggy-clean" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/noto-serif-gurmukhi" rel="stylesheet">
+
+
+<h1 id="what-is-markdown">What is Markdown???</h1>
+<ul>
+<li>Markdown is a lightweight markup language, created by John Gruber in
+2004, that uses plain text to easily and quickly add formatting (bold,
+italic, lists, etc.). It also accepts tags from more complex languages
+like HTML or CSS styles.</li>
+</ul>
+<h1 id="how-to-use-markdown">How to use Markdown???</h1>
+<ul>
+<li>Markdown, even without using HTML or CSS features, is an extremely
+powerful tool, and its learning curve is much easier to master than
+Writer or Word.</li>
+</ul>
+<p>The basic commands are very simple, and some have already been
+adopted by WhatsApp — without realizing it, we’ve already gotten used to
+them.</p>
+<ul>
+<li><strong>But, what program do I need to install for
+Markdown???</strong></li>
+</ul>
+<p><strong>NONE!!</strong> Markdown is plain text!!! So you can use any
+plain text editor to write it. To start, I highly recommend Codium,
+VScode, or similar. If you’re feeling brave, you can try nvim + nvchad,
+but that’s another topic. And if you don’t have any of those, you always
+have vim or nano.</p>
+<p><strong>I strongly recommend starting with this website to learn the
+basics:</strong></p>
+<p><a href="https://www.markdowntutorial.com/">Click here to learn
+Markdown</a></p>
+<p>But if you don’t have time or the will, here are the basics:</p>
+<h2 id="headers">Headers</h2>
+<p>These replace <code>&lt;h1&gt;, &lt;h2&gt;</code>…</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Title 1</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">## Title 2</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">### Title 3</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Title 4</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">##### Title 5</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">###### Title 6</span></span></code></pre></div>
+<h2 id="text">Text</h2>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>*Italic text*  </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>**Bold text**  </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>***Bold and italic***  </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>~~Strikethrough~~  </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="in">`Inline text (code)`</span></span></code></pre></div>
+<h2 id="lists">Lists</h2>
+<h3 id="unordered-list">Unordered list</h3>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Item 1</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Item 2</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Sub-item</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>Sub-sub-item</span></code></pre></div>
+<h3 id="ordered-list">Ordered list</h3>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>First item</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Second item</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Third item</span></code></pre></div>
+<h2 id="links">Links</h2>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Link text</span><span class="co">](https://example.com)</span></span></code></pre></div>
+<h2 id="images">Images</h2>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="al">![Alt text](https://path/image.jpg)</span></span></code></pre></div>
+<h2 id="quotes">Quotes</h2>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; This is a quote</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;&gt; This is a nested quote</span></span></code></pre></div>
+<h2 id="code-blocks">Code blocks</h2>
+<h2 id="tables">Tables</h2>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Column 1 <span class="pp">|</span> Column 2 <span class="pp">|</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="pp">|----------|----------|</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Data 1   <span class="pp">|</span> Data 2   <span class="pp">|</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Data 3   <span class="pp">|</span> Data 4   <span class="pp">|</span></span></code></pre></div>
+<h2 id="separators">Separators</h2>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span></code></pre></div>
+<h1 id="metadata-the-magic">METADATA, THE MAGIC</h1>
+<p>Metadata is what will give us the style so that pandoc can read it
+later. Here’s an example you can use to start styling your PDFs right
+away:</p>
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> &quot;HOW TO GENERATE SUPER COOL PDFs WITH MARKDOWN&quot;</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> ShikaTheRock!</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> &quot;24.9.2025&quot;</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="an">subject:</span><span class="co"> &quot;ShikaTutorials&quot;</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="an">titlepage:</span><span class="co"> true</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="an">titlepage-rule-height:</span><span class="co"> 0</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="an">titlepage-background:</span><span class="co"> ./cover.jpg</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="an">toc-own-page:</span><span class="co"> true</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="an">titlepage-text-color:</span><span class="co"> ffffff</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="an">page-background:</span><span class="co"> ./watermark.jpg</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span></code></pre></div>
+<p>For <code>cover.jpg</code> and <code>watermark.jpg</code> you can
+choose any image, place it in the same folder as your <code>.md</code>,
+and rename them.</p>
+<h1 id="eisvogel-a-must-have">EISVOGEL, A MUST-HAVE</h1>
+<p>Eisvogel, together with Markdown, is what makes our PDF possible. To
+install it:</p>
+<p>Download the latest version of EISVOGEL:</p>
+<p>https://github.com/Wandmalfarbe/pandoc-latex-template/releases/</p>
+<p>Create the template directory:</p>
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> <span class="va">$HOME</span>/.pandoc/templates</span></code></pre></div>
+<p>Unzip the template file and copy <code>eisvogel.latex</code> into the
+directory you just created:</p>
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unzip</span> Eisvogel<span class="pp">*</span></span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> eisvogel.latex <span class="va">$HOME</span>/.pandoc/templates/</span></code></pre></div>
+<h1 id="transforming-your-.md-into-a-.pdf">Transforming your .md into a
+.PDF</h1>
+<ul>
+<li>Okay, we already have our <code>.md</code> file created… Now
+what???</li>
+</ul>
+<p>At this point, we’ll need two key packages. If you can’t install
+programs on your machine, call your sysadmin to do it, or set up a
+virtual machine.</p>
+<h2 id="pandoc">Pandoc</h2>
+<p>Pandoc is the tool that allows us to convert one document format into
+another. It supports thousands of formats and is definitely worth
+exploring.</p>
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install pandoc</span></code></pre></div>
+<h2 id="latex">LaTeX</h2>
+<p>And then, to give our documents that nice professional format, we’ll
+need LaTeX:</p>
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install pipx environment</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install pipx</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Install for pandoc to use LaTeX (</span><span class="al">NOTE</span><span class="co">: without sudo)</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="ex">pipx</span> install pandoc-latex-environment</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Install LaTeX resources</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra</span></code></pre></div>
+<p>Alternatively, you could install <code>texlive-full</code>, but it’s
+very heavy.</p>
+<h2 id="the-command">The Command</h2>
+<p>Inside the same folder as your <code>.md</code>, run this
+command:</p>
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pandoc</span> document.md <span class="at">-o</span> document.pdf <span class="at">--template</span> eisvogel.latex</span></code></pre></div>
