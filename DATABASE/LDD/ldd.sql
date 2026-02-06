@@ -1,4 +1,4 @@
-/* 1. Eliminación de tablas (por dependencias) */
+/* Eliminación tablas*/
 DROP TABLE IF EXISTS toma_alimentos;
 DROP TABLE IF EXISTS toma;
 
