@@ -1,0 +1,1 @@
+select nif, nombre, apellido1, apellido2, nombre_banco from t_empleado e join t_datos_bancarios db on e.cod_emple = db.cod_emple and nombre_banco = 'BBVA';

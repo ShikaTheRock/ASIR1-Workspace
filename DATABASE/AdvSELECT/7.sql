@@ -1,0 +1,2 @@
+ update t_nomina n join t_empleado e on e.cod_emple = n.cod_emple join t_departamento d on d.cod_dep = e.cod_dep set sueldo_bruto = sueldo_bruto + 2 where n.mes = 2 and n.anyo = 2021 and d.nom_dep = "rrhh";
+ 

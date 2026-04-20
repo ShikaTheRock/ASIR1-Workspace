@@ -1,0 +1,2 @@
+cod_emple	nombre	apellido1	SueldoNeto
+3	Francisco	García	1422.00

@@ -15,7 +15,7 @@ page-background: ./watermark.jpg
 
 # 1er Bloque
 
-```sql
+```
 TRUNCATE TABLE animal_nutriente;
 TRUNCATE TABLE nutriente_alimento;
 TRUNCATE TABLE dieta_animal_fechainicio;
@@ -59,7 +59,7 @@ Cambiamos todos los truncate por **DELETE FROM**
 
 ## Resolucion:
 
-```sql
+```
 DELETE FROM dieta_alimentos;
 DELETE FROM alimentos;
 DELETE FROM animal;
@@ -74,7 +74,7 @@ DELETE FROM toma_alimentos;
 
 # 2do Bloque
 
-```sql
+```
 INSERT INTO dieta(cod_dieta, finalidad, od_dieta) VALUES (1,'engorde','cereales para engorde');
 INSERT INTO dieta(cod_dieta, finalidad, od_dieta) VALUES (2,'crecimiento','hormonas');
 INSERT INTO dieta(cod_dieta, finalidad, od_dieta) VALUES (3,'adelgazamiento','hierba');
@@ -87,7 +87,7 @@ Pues aqui podemos ignorar el "od_dieta" o alterar la tabla para añadir ese camp
 
 ## Resolucion:
 
-```sql
+```
 INSERT INTO dieta(cod_dieta, finalidad) VALUES (1,'engorde');
 INSERT INTO dieta(cod_dieta, finalidad) VALUES (2,'crecimiento');
 INSERT INTO dieta(cod_dieta, finalidad) VALUES (3,'adelgazamiento');
@@ -96,7 +96,7 @@ INSERT INTO dieta(cod_dieta, finalidad) VALUES (4,'mantenimiento');
 
 # 3er Bloque
 
-```sql
+```
 INSERT INTO alimento(nombre_alimento,tipo_alimento,magnitud_alimento,coste_alimento,od_alimento) VALUES('trigo','grano',300,0.3,"grano selecto");
 INSERT INTO alimento(nombre_alimento,tipo_alimento,magnitud_alimento,coste_alimento,od_alimento) VALUES('cebada','grano',100,0.4,"grano triturado");
 INSERT INTO alimento(nombre_alimento,tipo_alimento,magnitud_alimento,coste_alimento,od_alimento) VALUES('soja','grano',250,0.5,"grano entero");
@@ -130,7 +130,7 @@ La primary key no exixste en los inserts, por lo que no tiene un value por defau
 
 ## Resolucion:
 
-```sql
+```
 INSERT INTO alimentos(cod_alim,nom_alim,tipo,coste) VALUES(1,'trigo','grano',0.3);
 INSERT INTO alimentos(cod_alim,nom_alim,tipo,coste) VALUES(2,'cebada','grano',0.4);
 INSERT INTO alimentos(cod_alim,nom_alim,tipo,coste) VALUES(3,'soja','grano',0.5);
@@ -142,7 +142,7 @@ INSERT INTO alimentos(cod_alim,nom_alim,tipo,coste) VALUES(7,'alfalfa','alfalfa 
 
 # 4to Bloque
 
-```sql
+```
 INSERT INTO nutriente(nombre_nutriente,magnitud_nutriente,estado,od_nutriente) VALUES('zinc',3,'activo','aportación de la soja');
 INSERT INTO nutriente(nombre_nutriente,magnitud_nutriente,estado,od_nutriente) VALUES('potasio',5,'activo','aportación de la soja');
 INSERT INTO nutriente(nombre_nutriente,magnitud_nutriente,estado,od_nutriente) VALUES('hierro',20,'activo','aportación de la soja');
@@ -186,7 +186,7 @@ Cambiamos patasio por legalmente no es potasio en el que tiene el id 13 pues el 
 
 ## Resolucion:
 
-```sql
+```
 INSERT INTO nutrientes(cod_nutri,nom_nutri,magnitud) VALUES(1,'zinc',3);
 INSERT INTO nutrientes(cod_nutri,nom_nutri,magnitud) VALUES(2,'potasio',5);
 INSERT INTO nutrientes(cod_nutri,nom_nutri,magnitud) VALUES(3,'hierro',20);
@@ -204,7 +204,7 @@ INSERT INTO nutrientes(cod_nutri,nom_nutri,magnitud) VALUES(13,'legalmente no es
 
 # 5to Bloque
 
-```sql
+```
 INSERT INTO animal(cod_animal,tipo_animal,peso,anyo_nacimiento,utilidad_animal,produccion_animal,od_animal) VALUES(1,'bovino',900,"02-03-2012","carnica","carniceria","carne para carniceria");
 INSERT INTO animal(cod_animal,tipo_animal,peso,anyo_nacimiento,utilidad_animal,produccion_animal,od_animal) VALUES(2,'bovino',800,"05-11-2019","reproduccion","semental","toro reproductor");
 INSERT INTO animal(cod_animal,tipo_animal,peso,anyo_nacimiento,utilidad_animal,produccion_animal,od_animal) VALUES(3,'bovino',700,"08-10-2008","lactea","leche","leche entera");
@@ -231,7 +231,7 @@ Asi que cambiaremos la fecha completa a solo el año
 
 ## Resolucion:
 
-```sql
+```
 INSERT INTO animal(cod_animal,tipo,peso,anyo_nac,utilidad,produccion,od_animal) VALUES(1,'bovino',900,"2012","carnica","carniceria","carne para carniceria");
 INSERT INTO animal(cod_animal,tipo,peso,anyo_nac,utilidad,produccion,od_animal) VALUES(2,'bovino',800,"2019","reproduccion","semental","toro reproductor");
 INSERT INTO animal(cod_animal,tipo,peso,anyo_nac,utilidad,produccion,od_animal) VALUES(3,'bovino',700,"2008","lactea","leche","leche entera");
@@ -242,7 +242,7 @@ INSERT INTO animal(cod_animal,tipo,peso,anyo_nac,utilidad,produccion,od_animal) 
 
 # 6to Bloque
 
-```sql
+```
 INSERT INTO animal_nutriente(cod_animal,nombre_nutriente,cantidad_necesitada) VALUES (1,'proteina',200);
 INSERT INTO animal_nutriente(cod_animal,nombre_nutriente,cantidad_necesitada) VALUES (1,'fibra',500);
 INSERT INTO animal_nutriente(cod_animal,nombre_nutriente,cantidad_necesitada) VALUES (1,'hierro',300);
@@ -299,7 +299,7 @@ INSERT INTO animal_nutriente(cod_animal,nombre_nutriente,cantidad_necesitada) VA
 
 # 7mo Bloque
 
-```sql
+```
 INSERT INTO nutriente_alimento(nombre_nutriente,nombre_alimento,cantidad_contenida) VALUES('potasio','alfalfa',300);
 INSERT INTO nutriente_alimento(nombre_nutriente,nombre_alimento,cantidad_contenida) VALUES('vitamina B1','maiz',50);
 INSERT INTO nutriente_alimento(nombre_nutriente,nombre_alimento,cantidad_contenida) VALUES('vitamina B5','trigo',150);
@@ -321,7 +321,7 @@ Deben de ser int(11) corijamos eso
 
 ## Resolucion:
 
-```sql
+```
 INSERT INTO nutrientes_alimentos(cod_alim,cod_nutri) VALUES(1,1);
 INSERT INTO nutrientes_alimentos(cod_alim,cod_nutri) VALUES(2,2);
 INSERT INTO nutrientes_alimentos(cod_alim,cod_nutri) VALUES(3,3);
@@ -332,7 +332,7 @@ INSERT INTO nutrientes_alimentos(cod_alim,cod_nutri) VALUES(4,4);
 
 # 8vo Bloque
 
-```sql
+```
 INSERT INTO alimento_dieta_toma(cod_dieta,nombre_alimento,cod_toma,cantidad_toma)VALUES(1,'cebada',1,200);
 INSERT INTO alimento_dieta_toma(cod_dieta,nombre_alimento,cod_toma,cantidad_toma)VALUES(1,'cebada',3,100);
 INSERT INTO alimento_dieta_toma(cod_dieta,nombre_alimento,cod_toma,cantidad_toma)VALUES(1,'cebada',5,150);

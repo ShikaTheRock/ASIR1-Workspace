@@ -1,0 +1,1 @@
+delete e from t_empleado e join t_departamento d on e.cod_dep = d.cod_dep and d.nom_dep = "calidad";

@@ -1,0 +1,1 @@
+select n.cod_emple, e.nombre, e.apellido1, TRUNCATE(n.sueldo_bruto - ((sueldo_bruto * porcentaje_irpf / 100 )+(sueldo_bruto * porcentaje_segursocial / 100)), 2) as SueldoNeto from t_nomina n join t_empleado e on n.cod_emple = e.cod_emple where mes = 12 and anyo = 2020 and date_format(e.fecha_nacimiento, '%x') = '1980';

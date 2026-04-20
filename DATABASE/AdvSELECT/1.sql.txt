@@ -1,0 +1,4 @@
+nif	nombre	apellido1	apellido2	nombre_banco
+37894532R	Francisco	García	Piqueres	BBVA
+20847563Y	Isabel	Romeu	Sánchez	BBVA
+20866162L	Lola	Godoy	Marín	BBVA
